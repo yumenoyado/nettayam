@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--
+  Yume no Yado (夢の宿) — website
+  Files:  index.html (content)  ·  style.css (look)  ·  script.js (small interactions)
+  Look for "EDIT" comments for things you may want to change.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yume no Yado (夢の宿) — Peaceful 2BR Home in Thiruvananthapuram</title>
+  <meta name="description" content="Yume no Yado — 'House of Dreams'. A peaceful 2-bedroom entire home in green Nettayam, Thiruvananthapuram. Rated 5.0 by guests. ₹2,500 per night, discounts for longer stays. Self check-in, free parking, fast Wi-Fi.">
+
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="top">
+  <a href="#top" class="brand">
+    <span class="brand-jp">夢の宿</span>
+    <span class="brand-en">Yume no Yado</span>
+  </a>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="menu">
+    <a href="#stay">The Stay</a>
+    <a href="#gallery">Photos</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#location">Location</a>
+    <a href="#explore">Explore</a>
+    <!-- EDIT: Airbnb listing link (used in several places on this page) -->
+    <a href="#book" class="nav-cta">Book now</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-kanji">夢の宿</p>
+    <h1>Yume no Yado<br><em>The House of Dreams</em></h1>
+    <p class="hero-sub">A peaceful 2-bedroom home in the quiet, green hills of Nettayam, Thiruvananthapuram.</p>
+    <div class="badges">
+      <span class="badge badge-price">₹2,500 / night</span>
+      <span class="badge">★ 5.0 · 19 reviews</span>
+      <span class="badge">Guest favourite</span>
+      <span class="badge">Superhost</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#book" class="btn btn-primary">Book your stay</a>
+      <a href="#reviews" class="btn btn-ghost">Read guest reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK FACTS ================= -->
+<section class="facts" aria-label="Quick facts">
+  <div><strong>5</strong><span>guests</span></div>
+  <div><strong>2</strong><span>bedrooms</span></div>
+  <div><strong>3</strong><span>beds</span></div>
+  <div><strong>2</strong><span>bathrooms</span></div>
+  <div><strong>11 km</strong><span>to the airport</span></div>
+</section>
+
+<!-- ================= ABOUT THE STAY ================= -->
+<section id="stay" class="section split">
+  <div>
+    <p class="eyebrow">The stay</p>
+    <h2>A slice of real Kerala life, minutes from the city</h2>
+    <p>
+      <strong>Yume no Yado (夢の宿)</strong> is Japanese for <em>“House of Dreams”</em>, and the name fits.
+      It's a calm, restful home in Nettayam, one of Thiruvananthapuram's greenest and most tranquil
+      neighbourhoods, away from the tourist crowds.
+    </p>
+    <p>
+      You get the entire home to yourself: two air-conditioned bedrooms, two private bathrooms,
+      a well-equipped kitchen, high-speed Wi-Fi with a dedicated workspace, and free parking on the premises,
+      which is hard to find in this part of the city. Self check-in with a lockbox means you can arrive whenever suits you.
+    </p>
+    <p>
+      It works well for families, friends travelling together and remote workers. Stay for one night or several weeks. The whole home is <strong>₹2,500 per night</strong>, with special discounts for longer stays.
+    </p>
+  </div>
+  <ul class="highlights">
+    <li><span class="ico">🔑</span><div><strong>Self check-in</strong><p>Let yourself in with the lockbox, any time after 3 PM.</p></div></li>
+    <li><span class="ico">🚗</span><div><strong>Free parking</strong><p>One of the few places in the area with on-site parking.</p></div></li>
+    <li><span class="ico">💻</span><div><strong>Work-friendly</strong><p>High-speed Wi-Fi and a dedicated workspace.</p></div></li>
+    <li><span class="ico">🌿</span><div><strong>Green &amp; quiet</strong><p>A low-traffic residential lane with a private, fenced backyard.</p></div></li>
+  </ul>
+</section>
+
+<!-- ================= PHOTO GALLERY ================= -->
+<!--
+  EDIT: photos live in the "images" folder. To replace one, save your new photo
+  with the SAME file name (e.g. images/living-room.jpg) and it will appear here.
+-->
+<section id="gallery" class="section">
+  <p class="eyebrow">Photos</p>
+  <h2>Take a look inside</h2>
+  <div class="gallery">
+    <figure class="g-big"><img src="images/living-room.jpg" alt="Bright living room with sofa set, coffee table and TV" loading="lazy"><figcaption>Living room</figcaption></figure>
+    <figure><img src="images/dining.jpg" alt="Dining area with round table and four chairs" loading="lazy"><figcaption>Dining</figcaption></figure>
+    <figure><img src="images/bedroom.jpg" alt="Bedroom with two beds and ceiling fan" loading="lazy"><figcaption>Bedroom</figcaption></figure>
+    <figure><img src="images/kitchen.jpg" alt="Fully equipped kitchen with refrigerator, microwave and induction stove" loading="lazy"><figcaption>Kitchen</figcaption></figure>
+    <figure><img src="images/utility.jpg" alt="Utility and laundry area with washing machine" loading="lazy"><figcaption>Utility &amp; laundry</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= AMENITIES ================= -->
+<section id="amenities" class="section tinted">
+  <div class="inner">
+    <p class="eyebrow">Amenities</p>
+    <h2>Everything you need for a comfortable stay</h2>
+    <div class="amenity-groups">
+      <div class="am-card">
+        <h3>🍳 Kitchen &amp; dining</h3>
+        <ul><li>Full kitchen</li><li>Refrigerator &amp; freezer</li><li>Microwave</li><li>Induction stove</li><li>Hot water kettle</li><li>Pots, pans, dishes &amp; cutlery</li><li>Dining table</li></ul>
+      </div>
+      <div class="am-card">
+        <h3>🛏️ Bedroom &amp; laundry</h3>
+        <ul><li>Bed linens</li><li>Wardrobe &amp; hangers</li><li>Washing machine</li><li>Iron</li></ul>
+      </div>
+      <div class="am-card">
+        <h3>❄️ Comfort</h3>
+        <ul><li>Air conditioning</li><li>Ceiling fans</li><li>TV</li><li>Hot water</li><li>Hair dryer</li><li>Body soap &amp; shower gel</li></ul>
+      </div>
+      <div class="am-card">
+        <h3>💻 Work &amp; connectivity</h3>
+        <ul><li>High-speed Wi-Fi</li><li>Dedicated workspace</li></ul>
+      </div>
+      <div class="am-card">
+        <h3>🏡 Outdoors &amp; access</h3>
+        <ul><li>Private entrance</li><li>Private, fully fenced backyard</li><li>Free parking on premises</li><li>Self check-in (lockbox)</li></ul>
+      </div>
+      <div class="am-card">
+        <h3>🧰 Safety &amp; services</h3>
+        <ul><li>First aid kit</li><li>Exterior security camera at the entrance</li><li>Nightly stays · discounts for longer stays</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS / TESTIMONIALS ================= -->
+<!-- Real reviews copied from our Airbnb listing (first name + month as shown on Airbnb). -->
+<section id="reviews" class="section">
+  <p class="eyebrow">Guest reviews</p>
+  <h2>What our guests say</h2>
+
+  <div class="rating-summary">
+    <div class="rating-big">
+      <span class="score">5.0</span>
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <span class="muted">19 reviews on Airbnb · every review 5 stars</span>
+    </div>
+    <ul class="rating-bars">
+      <li><span>Cleanliness</span><i style="--v:98%"></i><b>4.9</b></li>
+      <li><span>Accuracy</span><i style="--v:100%"></i><b>5.0</b></li>
+      <li><span>Check-in</span><i style="--v:100%"></i><b>5.0</b></li>
+      <li><span>Communication</span><i style="--v:100%"></i><b>5.0</b></li>
+      <li><span>Location</span><i style="--v:94%"></i><b>4.7</b></li>
+      <li><span>Value</span><i style="--v:96%"></i><b>4.8</b></li>
+    </ul>
+  </div>
+
+  <div class="reviews">
+    <article class="review">
+      <p>“The house was incredibly comfy and spotless. It had all the amenities mentioned and felt warm and homely. The garden outside too added to the beauty and serenity of the home. It’s worth mentioning that the hosts, especially Mrs. Manjusha, were very cordial and quick to clarify any queries we had. Mr. Prakash also shared several local recommendations with us. Our 1 month stay at Yume No Yado was so comfortable that we will definitely miss this home. Truly a dream inn!”</p>
+      <footer><span class="avatar">A</span><div><strong>Anagha</strong><small>June 2026 · 1-month stay</small></div></footer>
+    </article>
+    <article class="review">
+      <p>“We had a pleasant and wonderful stay at this place — it truly felt like home with every amenity thoughtfully provided. The place was quiet and peaceful, perfect for unwinding. Mr. Prakash was an exceptional host, always helpful and responsive, which made our experience even better.”</p>
+      <footer><span class="avatar">S</span><div><strong>Shailesh</strong><small>April 2026</small></div></footer>
+    </article>
+    <article class="review">
+      <p>“We had a great stay at Manjusha's and Prakash's place. They are great hosts, very friendly and were very helpful. Even showed us around and shared local tips. Hanging out with them and getting to know them has been great! The place is very much as described and very suitable if you are looking for a peaceful and quiet stay. Would gladly stay there again!”</p>
+      <footer><span class="avatar">S</span><div><strong>Sahil</strong><small>February 2026</small></div></footer>
+    </article>
+    <article class="review">
+      <p>“Absolutely amazing stay! Everything was perfectly arranged, from the spotless space to the thoughtful details. The host was super responsive and made sure we felt at home. The location was perfect, and the whole experience exceeded our expectations. I would highly recommend this Airbnb to anyone looking for a flawless stay.”</p>
+      <footer><span class="avatar">B</span><div><strong>Bhoomika</strong><small>December 2024</small></div></footer>
+    </article>
+    <article class="review">
+      <p>“I recently stayed at Manjusha's YumenoYado, which translates to Dream Inn, and it truly lived up to its name. The accommodation was spotless, cozy, and well-equipped with everything we needed. … The place felt perfect for a big family, with a fully equipped kitchen, TV, and WiFi. Surrounded by lush greenery, the serene environment was a highlight. I can't wait to return!”</p>
+      <footer><span class="avatar">P</span><div><strong>Prem Sagar</strong><small>July 2024</small></div></footer>
+    </article>
+    <article class="review">
+      <p>“I stayed with my family last week. Highly suggest this location based on my excellent overall experience. The interior design and cleanliness of the house were exquisite. For our weekend vacation, this location was ideal. It was easy to communicate.”</p>
+      <footer><span class="avatar">N</span><div><strong>Nyil</strong><small>Hitachinaka, Japan · July 2024</small></div></footer>
+    </article>
+
+    <!-- More reviews: hidden until "Show more reviews" is clicked -->
+    <article class="review extra">
+      <p>“This is the first time I am writing a review here in this app. That is because we were absolutely satisfied with the facilities provided. The house is very neat and clean. Everything arranged perfectly. Nothing more… Nothing less. I highly recommend to book this house.”</p>
+      <footer><span class="avatar">R</span><div><strong>Retheesh</strong><small>August 2025</small></div></footer>
+    </article>
+    <article class="review extra">
+      <p>“I must say the place and the host is very up to the mark. The place was good equipped with the amenities and was clean. The host is very warmly and welcoming. They were very accountable and responsive, one can always rely on them. … Definitely this will be my go to place when in Trivandrum.”</p>
+      <footer><span class="avatar">P</span><div><strong>Prathyusha</strong><small>November 2024</small></div></footer>
+    </article>
+    <article class="review extra">
+      <p>“… The house is quite spacious and can comfortably accommodate a large family. The price is very competitive compared to city options, making it an excellent value. The airport is only 11 km away, and it takes just 20–25 minutes to reach, which was very convenient as I had to catch a morning flight.”</p>
+      <footer><span class="avatar">I</span><div><strong>Indusekharan</strong><small>August 2024</small></div></footer>
+    </article>
+    <article class="review extra">
+      <p>“It was a wonderful stay for our cousin group. The house was super clean and the communication with Manjusha is so easy and cooperative. It's one of the best places in Trivandrum for a peaceful stay.”</p>
+      <footer><span class="avatar">A</span><div><strong>Athul</strong><small>September 2024 · stayed twice</small></div></footer>
+    </article>
+    <article class="review extra">
+      <p>“We liked our stay here. The space was understandable, usable and peaceful. Old home style, clean and felt just being at home. Communication with Manjusha (host) went well and easy. Reasonable price for stay. Totally, it was great 👍”</p>
+      <footer><span class="avatar">W</span><div><strong>Willfred</strong><small>September 2024</small></div></footer>
+    </article>
+    <article class="review extra">
+      <p>“Check-in was seamless and the host helped us in navigating the house. … The house within a residential locality is well maintained and preserved to provide peace to the travellers.”</p>
+      <footer><span class="avatar">L</span><div><strong>Lokesh</strong><small>December 2024</small></div></footer>
+    </article>
+  </div>
+
+  <div class="center">
+    <button class="btn btn-outline" id="moreReviews">Show more reviews</button>
+    <p class="muted small">Reviews are from verified stays on Airbnb.
+      <a href="https://www.airbnb.com/rooms/1197825193065387489/reviews" target="_blank" rel="noopener">Read all 19 on Airbnb →</a></p>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="location" class="section tinted">
+  <div class="inner split">
+    <div>
+      <p class="eyebrow">Location</p>
+      <h2>Quiet Nettayam, close to the best of Trivandrum</h2>
+      <p>
+        The house is in a quiet lane just off Nettayam Junction, next to Moni Builder's office (a well-known local landmark).
+        Grocery stores and family-run Kerala eateries are a short walk away, and the markets of Vattiyoorkavu and Peroorkada are a quick auto ride.
+        Autos, cabs, Uber and Ola are easy to get.
+      </p>
+      <ul class="distances">
+        <li><span>✈️ Trivandrum International Airport</span><b>11 km · 25–30 min</b></li>
+        <li><span>🏙️ City centre</span><b>7–11 km</b></li>
+        <li><span>🛕 Padmanabhaswamy Temple &amp; old city</span><b>~12 km · 35 min</b></li>
+        <li><span>🏖️ Kovalam Beach</span><b>~20 km · 45 min</b></li>
+        <li><span>🍃 Ponmudi hill station</span><b>~50 km · 1.5–2 hr</b></li>
+        <li><span>🛶 Poovar backwaters</span><b>~35 km · 1 hr</b></li>
+        <li><span>🌅 Varkala cliff beaches</span><b>~50 km · 1.5 hr</b></li>
+      </ul>
+      <p><a href="#explore">See all nearby attractions →</a></p>
+    </div>
+    <div class="map">
+      <!-- EDIT: map is centred on Moni Builders & Developers, Nettayam (landmark next to the house). -->
+      <iframe title="Map: Yume no Yado is next to Moni Builders, Nettayam, Thiruvananthapuram"
+        src="https://maps.google.com/maps?q=Moni%20Builders%20%26%20Developers%2C%20Nettayam%2C%20Thiruvananthapuram&ll=8.5397679,76.9897749&z=16&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="map-link">📍 We're right next to <strong>Moni Builders &amp; Developers</strong>, near Kamala Nagar Rd, Nettayam.
+        <a href="https://www.google.com/maps/search/?api=1&query=8.5397679%2C76.9897749" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEARBY ATTRACTIONS ================= -->
+<!-- EDIT: distances/times are approximate from Yume no Yado. Add or remove <article class="attr"> cards freely. -->
+<section id="explore" class="section">
+  <p class="eyebrow">Explore</p>
+  <h2>Things to see in and around Trivandrum</h2>
+  <p class="intro">From temples and palaces in the old city to golden beaches, backwaters and misty hills, Yume no Yado is a quiet base for exploring southern Kerala. Ask us for directions, local food tips or a trusted taxi driver.</p>
+
+  <div class="attr-tabs" role="tablist">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="city">In the city</button>
+    <button data-filter="beach">Beaches &amp; backwaters</button>
+    <button data-filter="nature">Hills &amp; nature</button>
+    <button data-filter="day">Day trips</button>
+  </div>
+
+  <div class="attr-group" data-group="city">
+    <h3>🏛️ In the city</h3>
+    <div class="attr-grid">
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🛕</span><span class="dist">~12 km · 35 min</span></div>
+        <h4>Sree Padmanabhaswamy Temple</h4>
+        <p>The temple the city is named after, with a towering seven-tiered gopuram and the famous reclining image of Lord Vishnu. One of the most important temples in Kerala.</p>
+        <p class="tip"><b>Tip:</b> Only Hindus may enter, and there is a strict dress code: mundu/dhoti for men (no shirt), saree or long skirt for women. Dhotis can be hired near the entrance.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🐎</span><span class="dist">Next to the temple</span></div>
+        <h4>Kuthira Malika Palace Museum</h4>
+        <p>A palace built by Maharaja Swathi Thirunal in traditional Kerala style. Its eaves are supported by 122 carved wooden horses, which give it its name. Inside are royal Travancore treasures.</p>
+        <p class="tip"><b>Tip:</b> Closed on Mondays. Usually open mornings and afternoons, with a lunch break.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🖼️</span><span class="dist">~8 km · 25 min</span></div>
+        <h4>Napier Museum, Art Gallery &amp; Zoo</h4>
+        <p>A striking 19th-century museum of bronzes, jewellery and ivory carvings. The Sree Chitra Art Gallery holds paintings by Raja Ravi Varma, and the zoo is in the same leafy park.</p>
+        <p class="tip"><b>Tip:</b> Closed on Mondays. Go in the morning, when it's cooler and the animals are more active.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🛍️</span><span class="dist">~11 km · 30 min</span></div>
+        <h4>East Fort &amp; Chalai Market</h4>
+        <p>The bustling old-city bazaar next to the temple, good for spices, banana chips, brass lamps and saris. In the evening, try snacks and tea from the stalls around Kizhakkekotta (East Fort).</p>
+        <p class="tip"><b>Tip:</b> Go in the late afternoon to shop, then stay for evening snacks.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🧜</span><span class="dist">~16 km · 40 min</span></div>
+        <h4>Shangumugham Beach</h4>
+        <p>The city's favourite beach for sunsets, home to a giant reclining mermaid sculpture. It's close to the airport, so it works well before an evening flight.</p>
+        <p class="tip"><b>Tip:</b> Best at sunset. The sea is rough, so it isn't safe for swimming.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🚣</span><span class="dist">~16 km · 40 min</span></div>
+        <h4>Veli Tourist Village</h4>
+        <p>A park where Veli Lake meets the Arabian Sea, with pedal boats, a floating bridge, sculptures and gardens. Families with children enjoy it.</p>
+        <p class="tip"><b>Tip:</b> Open roughly 9 AM–6 PM. Late afternoon is pleasant.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="attr-group" data-group="beach">
+    <h3>🏖️ Beaches &amp; backwaters</h3>
+    <div class="attr-grid">
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🌊</span><span class="dist">~20 km · 45 min</span></div>
+        <h4>Kovalam Beach</h4>
+        <p>Kerala's best-known beach town: three crescent beaches (Lighthouse, Hawa and Samudra) with seafood restaurants and Ayurvedic massage. Climb the red-and-white lighthouse for the view.</p>
+        <p class="tip"><b>Tip:</b> Best from September to May. Swim only where lifeguards are on duty.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">⛵</span><span class="dist">~24 km · 50 min</span></div>
+        <h4>Vizhinjam</h4>
+        <p>A colourful fishing harbour just south of Kovalam, with an ancient rock-cut cave temple. Combine it with a Kovalam visit.</p>
+        <p class="tip"><b>Tip:</b> Come early in the morning to see the boats come in with the day's catch.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🛶</span><span class="dist">~35 km · 1 hr</span></div>
+        <h4>Poovar Backwaters</h4>
+        <p>Take a boat through mangrove-lined backwaters to the golden sandbar where the Neyyar River meets the sea. This is a classic Kerala backwater experience close to the city.</p>
+        <p class="tip"><b>Tip:</b> Boats leave from the jetties at Poovar. Mornings are calmer and cooler.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🌅</span><span class="dist">~50 km · 1.5 hr</span></div>
+        <h4>Varkala Cliff</h4>
+        <p>Dramatic red laterite cliffs above Papanasam Beach, lined with cafés and shops. Nearby is the ancient Janardhana Swamy Temple.</p>
+        <p class="tip"><b>Tip:</b> Stay for the sunset from the North Cliff walkway.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="attr-group" data-group="nature">
+    <h3>⛰️ Hills, dams &amp; nature</h3>
+    <div class="attr-grid">
+      <article class="attr near">
+        <div class="attr-top"><span class="attr-ico">💧</span><span class="dist">Closest · ~8 km</span></div>
+        <h4>Aruvikkara Dam</h4>
+        <p>A small, peaceful reservoir and riverside temple just a short drive from the house. It's a quiet spot for a morning walk or an evening outing.</p>
+        <p class="tip"><b>Tip:</b> A nice short outing when you have an hour or two to spare.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🐊</span><span class="dist">~25 km · 50 min</span></div>
+        <h4>Neyyar Dam &amp; Wildlife Sanctuary</h4>
+        <p>A large reservoir framed by the Western Ghats, with boating and a crocodile rehabilitation centre. The Kappukadu elephant rehabilitation centre is nearby.</p>
+        <p class="tip"><b>Tip:</b> Arrive by 10 AM. The elephant centre is closed on Mondays.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🍃</span><span class="dist">~50 km · 1.5–2 hr</span></div>
+        <h4>Ponmudi Hill Station</h4>
+        <p>A cool, misty hill station reached by a scenic road with 22 hairpin bends through forest and tea estates. You can see Golden Valley, waterfalls, viewpoints and trekking trails.</p>
+        <p class="tip"><b>Tip:</b> Best from November to February. Carry a light jacket. The road may close in heavy rain.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="attr-group" data-group="day">
+    <h3>🚗 Day trips</h3>
+    <div class="attr-grid">
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🦅</span><span class="dist">~55 km · 1.5 hr</span></div>
+        <h4>Jatayu Earth's Center</h4>
+        <p>A giant sculpture of the mythical bird Jatayu from the Ramayana, set on a rocky hilltop. A cable car takes you to the top, where there are wide views and adventure activities.</p>
+        <p class="tip"><b>Tip:</b> Book tickets online in advance, especially on weekends.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🏯</span><span class="dist">~65 km · 1.5–2 hr</span></div>
+        <h4>Padmanabhapuram Palace</h4>
+        <p>The former seat of the Travancore kings, a 400-year-old masterpiece of Kerala woodwork with carved ceilings and polished floors. It's just across the border in Tamil Nadu.</p>
+        <p class="tip"><b>Tip:</b> Closed on Mondays. Combine it with Kanyakumari for a full day out.</p>
+      </article>
+      <article class="attr">
+        <div class="attr-top"><span class="attr-ico">🌄</span><span class="dist">~100 km · 2.5–3 hr</span></div>
+        <h4>Kanyakumari</h4>
+        <p>The southern tip of India, where three seas meet. See the sunrise, take the ferry to the Vivekananda Rock Memorial and the Thiruvalluvar Statue, and visit the Kumari Amman Temple.</p>
+        <p class="tip"><b>Tip:</b> Leave very early to catch the sunrise, or go for the sunset.</p>
+      </article>
+    </div>
+  </div>
+
+  <p class="attr-note">Distances and drive times from Yume no Yado are approximate and depend on traffic. Opening hours change, so please check before you go, or just ask us.</p>
+</section>
+
+<!-- ================= HOSTS + HOUSE RULES ================= -->
+<section class="section split hosts">
+  <div>
+    <p class="eyebrow">Your hosts</p>
+    <h2>Manjusha &amp; Prakash</h2>
+    <p>
+      We named our home Yume no Yado, the “House of Dreams”, because we wanted guests to feel completely at ease here.
+      We live nearby and are always happy to help with local tips, directions or anything you need during your stay.
+    </p>
+    <ul class="host-stats">
+      <li><strong>Superhost</strong><span>on Airbnb</span></li>
+      <li><strong>100%</strong><span>response rate</span></li>
+      <li><strong>&lt; 1 hr</strong><span>typical reply</span></li>
+    </ul>
+  </div>
+  <div class="rules">
+    <h3>Good to know</h3>
+    <ul>
+      <li><span>Check-in</span><b>After 3:00 PM</b></li>
+      <li><span>Checkout</span><b>Before 10:00 AM</b></li>
+      <li><span>Guests</span><b>Up to 5</b></li>
+      <li><span>Rate</span><b>₹2,500 / night</b></li>
+      <li><span>Minimum stay</span><b>1 night</b></li>
+      <li><span>Longer stays</span><b>Special discounts</b></li>
+      <li><span>Security</span><b>Exterior camera at entrance</b></li>
+      <li><span>Direct booking</span><b><a href="tel:+918547444126">+91 85474 44126</a></b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= BOOKING CTA ================= -->
+<!-- EDIT: phone number and email for direct bookings -->
+<section class="cta" id="book">
+  <p class="hero-kanji small-kanji">夢の宿</p>
+  <h2>Ready for a restful stay in Kerala?</h2>
+  <p>Book directly with us by phone or email, or reserve on Airbnb.</p>
+  <!-- EDIT: nightly rate -->
+  <div class="price-card">
+    <div><span class="price">₹2,500</span><span class="per">/ night</span></div>
+    <p>Entire home · up to 5 guests · no minimum stay</p>
+    <p class="discount">Staying a week or longer? Ask us about our <strong>special long-stay discounts</strong>.</p>
+  </div>
+  <div class="contact-cards">
+    <a class="contact-card" href="tel:+918547444126">
+      <span class="c-ico">📞</span>
+      <span class="c-label">Call us</span>
+      <strong>+91 85474 44126</strong>
+    </a>
+    <a class="contact-card" href="mailto:yumenoyado@gmail.com?subject=Booking%20enquiry%20-%20Yume%20no%20Yado">
+      <span class="c-ico">✉️</span>
+      <span class="c-label">Email us</span>
+      <strong>yumenoyado@gmail.com</strong>
+    </a>
+  </div>
+  <p class="cta-note">When you contact us, please share your dates and number of guests.</p>
+  <p class="cta-alt">Prefer Airbnb? <a href="https://www.airbnb.com/rooms/1197825193065387489" target="_blank" rel="noopener">Book on Airbnb →</a></p>
+</section>
+
+<footer class="footer">
+  <p><span class="brand-jp">夢の宿</span> Yume no Yado · Nettayam, Thiruvananthapuram, Kerala, India</p>
+  <p class="muted small">© <span id="year">2026</span> Yume no Yado. Book direct: <a href="tel:+918547444126">+91 85474 44126</a> · <a href="mailto:yumenoyado@gmail.com">yumenoyado@gmail.com</a></p>
+</footer>
+
+<!-- Photo viewer (opens when you click a photo) -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <img alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
