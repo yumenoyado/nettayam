@@ -264,6 +264,39 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .lightbox img { max-height: 90vh; border-radius: 8px; }
 .lb-close { position: absolute; top: 14px; right: 20px; background: none; border: 0; color: #fff; font-size: 2.4rem; cursor: pointer; }
 
+/* ---------- Trivandrum guide page ---------- */
+.page-hero {
+  padding: 70px 5vw 60px; color: #fff;
+  background: linear-gradient(120deg, #10342d 0%, #1f5c4f 55%, #c2603d 140%);
+}
+.page-hero h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.4rem); margin: 0 0 14px; }
+.page-hero .hero-sub { max-width: 640px; }
+.page-hero .hero-kanji { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+.crumbs { font-size: .85rem; opacity: .8; margin: 0 0 18px; }
+.crumbs a { color: #f6c97f; }
+.guide-intro { max-width: 760px; font-size: 1.05rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.toc a {
+  text-decoration: none; color: var(--green); font-weight: 500; font-size: .95rem;
+  padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff;
+}
+.toc a:hover { border-color: var(--green); }
+.itin-grid, .season-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; margin-top: 10px; }
+.itin, .season { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+.itin h3, .season h3 { font-size: 1.15rem; color: var(--green); margin: 0 0 12px; }
+.itin ol { margin: 0; padding-left: 20px; }
+.itin li { margin-bottom: 8px; font-size: .95rem; }
+.season p { margin: 0; font-size: .95rem; }
+.food-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
+.food { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.food h4 { font-family: "Fraunces", serif; color: var(--green); font-size: 1.05rem; margin: 0 0 6px; }
+.food p { margin: 0; font-size: .92rem; color: var(--muted); }
+.sub-h { font-size: 1.2rem; color: var(--green); margin: 34px 0 12px; }
+.fest-list, .tips-list { max-width: 820px; padding-left: 20px; }
+.fest-list li, .tips-list li { margin-bottom: 10px; }
+.guide-cta-actions { justify-content: center; }
+.guide-link { margin-top: 26px; text-align: center; }
+
 /* ---------- Booking shortcuts ---------- */
 .review-cta { margin-top: 18px; font-weight: 600; color: var(--green); }
 .review-cta a { color: var(--terra); }
