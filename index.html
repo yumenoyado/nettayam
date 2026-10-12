@@ -4,12 +4,77 @@
   Files:  index.html (content)  ·  style.css (look)  ·  script.js (small interactions)
   Look for "EDIT" comments for things you may want to change.
 -->
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yume no Yado (夢の宿) — Peaceful 2BR Home in Thiruvananthapuram</title>
-  <meta name="description" content="Yume no Yado — 'The Dream Inn'. A peaceful 2-bedroom entire home in green Nettayam, Thiruvananthapuram. Rated 5.0 by guests. ₹2,500 per night, discounts for longer stays. Self check-in, free parking, fast Wi-Fi.">
+  <!-- ===== SEO: what Google shows in search results ===== -->
+  <!-- EDIT: keep the title under about 60 characters and the description under about 155 -->
+  <title>Yume no Yado | 2BHK Homestay in Nettayam, Trivandrum</title>
+  <meta name="description" content="Entire 2-bedroom AC homestay in green, quiet Nettayam, Trivandrum. ₹2,500/night, 11 km from the airport, free parking, Wi-Fi. Rated 5.0 by guests.">
+  <link rel="canonical" href="https://yumenoyado.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#10342d">
+
+  <!-- ===== Link previews (WhatsApp, Facebook, Instagram, X) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yume no Yado (The Dream Inn)">
+  <meta property="og:url" content="https://yumenoyado.com/">
+  <meta property="og:title" content="Yume no Yado – a peaceful 2BHK homestay in Trivandrum">
+  <meta property="og:description" content="Entire home in green Nettayam, Thiruvananthapuram. ₹2,500/night, free parking, self check-in. Book direct with the hosts.">
+  <meta property="og:image" content="https://yumenoyado.com/images/living-room.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="810">
+  <meta property="og:image:alt" content="Living room at Yume no Yado, Nettayam">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== Structured data: tells Google this is a place to stay, where it is, and how to book ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "@id": "https://yumenoyado.com/#lodging",
+    "name": "Yume no Yado (The Dream Inn)",
+    "alternateName": ["Yume no Yado", "The Dream Inn", "夢の宿", "YumenoYado"],
+    "description": "A peaceful 2-bedroom entire home (homestay) in Nettayam, Thiruvananthapuram (Trivandrum), Kerala. Two air-conditioned bedrooms, two bathrooms, full kitchen, Wi-Fi, free parking and self check-in.",
+    "url": "https://yumenoyado.com/",
+    "telephone": "+91-8547444126",
+    "email": "info@yumenoyado.com",
+    "image": [
+      "https://yumenoyado.com/images/living-room.jpg",
+      "https://yumenoyado.com/images/bedroom.jpg",
+      "https://yumenoyado.com/images/dining.jpg",
+      "https://yumenoyado.com/images/kitchen.jpg"
+    ],
+    "priceRange": "₹2,500 per night",
+    "currenciesAccepted": "INR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Moni Builders, Kamala Nagar Road, Nettayam",
+      "addressLocality": "Thiruvananthapuram",
+      "addressRegion": "Kerala",
+      "postalCode": "695013",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 8.5397679, "longitude": 76.9897749 },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=8.5397679%2C76.9897749",
+    "checkinTime": "15:00",
+    "checkoutTime": "10:00",
+    "numberOfRooms": 2,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Full kitchen", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Washing machine", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Dedicated workspace", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Self check-in", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Private fenced backyard", "value": true }
+    ],
+    "sameAs": ["https://www.airbnb.com/rooms/1197825193065387489"]
+  }
+  </script>
 
   <!-- Fonts from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +99,7 @@
     <a href="#reviews">Reviews</a>
     <a href="#location">Location</a>
     <a href="#explore">Explore</a>
+    <a href="#hospitals">Hospitals</a>
     <!-- EDIT: Airbnb listing link (used in several places on this page) -->
     <a href="#book" class="nav-cta">Book now</a>
   </nav>
@@ -45,7 +111,7 @@
   <div class="hero-content">
     <p class="hero-kanji">夢の宿</p>
     <h1>Yume no Yado<br><em>The Dream Inn</em></h1>
-    <p class="hero-sub">A peaceful 2-bedroom home in the quiet, green hills of Nettayam, Thiruvananthapuram.</p>
+    <p class="hero-sub">A peaceful 2-bedroom homestay in the quiet, green hills of Nettayam, Thiruvananthapuram (Trivandrum).</p>
     <div class="badges">
       <span class="badge badge-price">₹2,500 / night</span>
       <span class="badge">★ 5.0 · 19 reviews</span>
@@ -75,7 +141,7 @@
     <h2>A slice of real Kerala life, minutes from the city</h2>
     <p>
       <strong>Yume no Yado (夢の宿)</strong> is Japanese for <em>“The Dream Inn”</em>, and the name fits.
-      It's a calm, restful home in Nettayam, one of Thiruvananthapuram's greenest and most tranquil
+      It's a calm, restful homestay in Nettayam, one of Thiruvananthapuram's (Trivandrum's) greenest and most tranquil
       neighbourhoods, away from the tourist crowds.
     </p>
     <p>
@@ -104,11 +170,11 @@
   <p class="eyebrow">Photos</p>
   <h2>Take a look inside</h2>
   <div class="gallery">
-    <figure class="g-big"><img src="images/living-room.jpg" alt="Bright living room with sofa set, coffee table and TV" loading="lazy"><figcaption>Living room</figcaption></figure>
-    <figure><img src="images/dining.jpg" alt="Dining area with round table and four chairs" loading="lazy"><figcaption>Dining</figcaption></figure>
-    <figure><img src="images/bedroom.jpg" alt="Bedroom with two beds and ceiling fan" loading="lazy"><figcaption>Bedroom</figcaption></figure>
-    <figure><img src="images/kitchen.jpg" alt="Fully equipped kitchen with refrigerator, microwave and induction stove" loading="lazy"><figcaption>Kitchen</figcaption></figure>
-    <figure><img src="images/utility.jpg" alt="Utility and laundry area with washing machine" loading="lazy"><figcaption>Utility &amp; laundry</figcaption></figure>
+    <figure class="g-big"><img src="images/living-room.jpg" alt="Bright living room with sofa set, coffee table and TV at Yume no Yado homestay, Trivandrum" width="1440" height="810" loading="lazy"><figcaption>Living room</figcaption></figure>
+    <figure><img src="images/dining.jpg" alt="Dining area with round table and four chairs" width="1440" height="810" loading="lazy"><figcaption>Dining</figcaption></figure>
+    <figure><img src="images/bedroom.jpg" alt="Air-conditioned bedroom with two beds and ceiling fan" width="1440" height="810" loading="lazy"><figcaption>Bedroom</figcaption></figure>
+    <figure><img src="images/kitchen.jpg" alt="Fully equipped kitchen with refrigerator, microwave and induction stove" width="1440" height="810" loading="lazy"><figcaption>Kitchen</figcaption></figure>
+    <figure><img src="images/utility.jpg" alt="Utility and laundry area with washing machine" width="1440" height="2560" loading="lazy"><figcaption>Utility &amp; laundry</figcaption></figure>
   </div>
 </section>
 
@@ -399,6 +465,72 @@
   <p class="attr-note">Distances and drive times from Yume no Yado are approximate and depend on traffic. Opening hours change, so please check before you go, or just ask us.</p>
 </section>
 
+<!-- ================= NEARBY HOSPITALS ================= -->
+<!-- EDIT: distances/times are approximate road distances from Yume no Yado. Add or remove <article class="attr"> cards freely. -->
+<section id="hospitals" class="section tinted">
+  <div class="inner">
+    <p class="eyebrow">Health &amp; safety</p>
+    <h2>Nearby hospitals</h2>
+    <p class="intro">Good medical care is close by. Several hospitals with 24-hour emergency departments are within a 15–35 minute drive of Yume no Yado. If you feel unwell during your stay, call or message us and we will help you get to the right place.</p>
+    <ul class="distances" style="max-width:720px;margin:0 0 28px">
+      <li><span>🚑 Ambulance (Kerala, free)</span><b><a href="tel:108">108</a></b></li>
+      <li><span>🆘 All emergencies</span><b><a href="tel:112">112</a></b></li>
+      <li><span>📞 Your hosts, Manjusha &amp; Prakash</span><b><a href="tel:+918547444126">+91 85474 44126</a></b></li>
+    </ul>
+    <div class="attr-grid">
+        <article class="attr near">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~5 km · 15 min</span></div>
+          <h4>Govt. District Model Hospital, Peroorkada</h4>
+          <p>The nearest government hospital, with a 24-hour casualty for minor injuries and first aid.</p>
+          <p class="tip"><b>Good for:</b> quick first aid and minor emergencies · <a href="https://www.google.com/maps/search/?api=1&amp;query=District%20Model%20Hospital%20Peroorkada%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr near">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~7 km · 20 min</span></div>
+          <h4>SK Hospital, Edappazhinji</h4>
+          <p>Well-known private multi-speciality hospital with 24×7 emergency, pharmacy and diagnostics.</p>
+          <p class="tip"><b>Good for:</b> emergencies and general consultations · <a href="https://www.google.com/maps/search/?api=1&amp;query=SK%20Hospital%20Edappazhinji%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~10 km · 25 min</span></div>
+          <h4>Cosmopolitan Hospital, Murinjapalam</h4>
+          <p>Large private multi-speciality hospital near Pattom with 24×7 emergency care.</p>
+          <p class="tip"><b>Good for:</b> emergencies, specialist doctors · <a href="https://www.google.com/maps/search/?api=1&amp;query=Cosmopolitan%20Hospital%20Murinjapalam%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~10 km · 25 min</span></div>
+          <h4>SUT Hospital, Pattom</h4>
+          <p>Established private multi-speciality hospital in central Trivandrum.</p>
+          <p class="tip"><b>Good for:</b> specialist care, diagnostics · <a href="https://www.google.com/maps/search/?api=1&amp;query=SUT%20Hospital%20Pattom%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~11 km · 30 min</span></div>
+          <h4>Government Medical College Hospital</h4>
+          <p>Kerala's largest public hospital, with a major emergency and trauma centre.</p>
+          <p class="tip"><b>Good for:</b> serious emergencies and trauma · <a href="https://www.google.com/maps/search/?api=1&amp;query=Government%20Medical%20College%20Hospital%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~11 km · 30 min</span></div>
+          <h4>PRS Hospital, Killipalam</h4>
+          <p>Private multi-speciality hospital on the way to the old city, with 24×7 emergency.</p>
+          <p class="tip"><b>Good for:</b> emergencies, general care · <a href="https://www.google.com/maps/search/?api=1&amp;query=PRS%20Hospital%20Killipalam%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~13 km · 35 min</span></div>
+          <h4>Ananthapuri Hospitals, Chacka</h4>
+          <p>Multi-speciality hospital close to the airport, with 24×7 emergency.</p>
+          <p class="tip"><b>Good for:</b> emergencies near the airport · <a href="https://www.google.com/maps/search/?api=1&amp;query=Ananthapuri%20Hospitals%20Chacka%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+        <article class="attr">
+          <div class="attr-top"><span class="attr-ico">🏥</span><span class="dist">~14 km · 35 min</span></div>
+          <h4>KIMSHEALTH, Anayara</h4>
+          <p>One of the city's biggest private tertiary-care hospitals, with international patient services.</p>
+          <p class="tip"><b>Good for:</b> advanced and specialist care · <a href="https://www.google.com/maps/search/?api=1&amp;query=KIMSHEALTH%20Anayara%20Thiruvananthapuram" target="_blank" rel="noopener">Map →</a></p>
+        </article>
+    </div>
+    <p class="attr-note">Distances and drive times from Yume no Yado are approximate and depend on traffic. Pharmacies are available near Nettayam Junction and Vattiyoorkavu.</p>
+  </div>
+</section>
+
 <!-- ================= HOSTS + HOUSE RULES ================= -->
 <section class="section split hosts">
   <div>
@@ -458,7 +590,7 @@
 </section>
 
 <footer class="footer">
-  <p><span class="brand-jp">夢の宿</span> Yume no Yado · Nettayam, Thiruvananthapuram, Kerala, India</p>
+  <p><span class="brand-jp">夢の宿</span> Yume no Yado · Nettayam, Thiruvananthapuram, Kerala 695013, India</p>
   <p class="muted small">© <span id="year">2026</span> Yume no Yado. Book direct: <a href="tel:+918547444126">+91 85474 44126</a> · <a href="mailto:info@yumenoyado.com">info@yumenoyado.com</a></p>
 </footer>
 

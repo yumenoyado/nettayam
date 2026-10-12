@@ -111,7 +111,7 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .facts { border-top: 4px solid var(--gold); }
 
 /* ---------- Sections ---------- */
-.section { padding: 90px 5vw; max-width: 1200px; margin: 0 auto; }
+.section { padding: 90px 5vw; max-width: calc(1200px + 10vw); margin: 0 auto; }
 .section.tinted { max-width: none; background: var(--cream); }
 .inner { max-width: 1200px; margin: 0 auto; }
 .split { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start; }
