@@ -296,6 +296,11 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .fest-list li, .tips-list li { margin-bottom: 10px; }
 .guide-cta-actions { justify-content: center; }
 .guide-link { margin-top: 26px; text-align: center; }
+.resto { display: flex; flex-direction: column; gap: 6px; }
+.resto-tag { align-self: flex-start; background: var(--cream); color: var(--terra); font-weight: 600; font-size: .75rem; padding: 3px 10px; border-radius: 999px; }
+.resto .resto-tag-note { font-size: .82rem; color: var(--muted); font-style: italic; margin: 0; }
+.resto .resto-link { margin-top: auto; padding-top: 6px; font-size: .88rem; }
+#restaurants .food-grid { margin-bottom: 8px; }
 .tour-card {
   display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; align-items: start;
   background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--gold);
