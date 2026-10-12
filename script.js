@@ -44,3 +44,11 @@ document.querySelectorAll('.attr-tabs button').forEach(btn => {
     });
   });
 });
+
+// 6. Phones: hide the bottom booking bar while the booking section itself is on screen
+const bookBar = document.querySelector('.book-bar');
+const bookSection = document.getElementById('book');
+if (bookBar && bookSection && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([e]) => bookBar.classList.toggle('hide', e.isIntersecting))
+    .observe(bookSection);
+}

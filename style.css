@@ -264,6 +264,12 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .lightbox img { max-height: 90vh; border-radius: 8px; }
 .lb-close { position: absolute; top: 14px; right: 20px; background: none; border: 0; color: #fff; font-size: 2.4rem; cursor: pointer; }
 
+/* ---------- Booking shortcuts ---------- */
+.review-cta { margin-top: 18px; font-weight: 600; color: var(--green); }
+.review-cta a { color: var(--terra); }
+.nav-book { display: none; }
+.book-bar { display: none; }
+
 /* =========================================================
    Tablets and phones
    ========================================================= */
@@ -291,4 +297,36 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
   .rating-bars li { grid-template-columns: 110px 1fr 30px; }
   .map iframe { height: 300px; }
   .rules { padding: 24px; }
+
+  /* Hero buttons: Book full width, WhatsApp + Call side by side */
+  .hero-actions .btn-primary { flex: 1 1 100%; text-align: center; }
+  .hero-actions .btn-ghost { flex: 1 1 0; text-align: center; }
+
+  /* Always-visible Book button in the phone header */
+  .nav-book {
+    display: inline-block; margin-left: auto; margin-right: 10px;
+    background: var(--green); color: #fff; text-decoration: none;
+    padding: 7px 16px; border-radius: 999px; font-size: .9rem; font-weight: 600;
+  }
+
+  /* Booking bar fixed to the bottom of the screen */
+  body { padding-bottom: 72px; }
+  .book-bar {
+    display: flex; align-items: center; gap: 8px;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251,246,236,.97); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(31,92,79,.10);
+    transition: transform .25s ease;
+  }
+  .book-bar.hide { transform: translateY(110%); }
+  .bb-price { flex: 1; line-height: 1.15; }
+  .bb-price strong { display: block; font-family: "Fraunces", serif; font-size: 1.2rem; color: var(--terra); }
+  .bb-price span { font-size: .78rem; color: var(--muted); }
+  .bb-btn {
+    display: grid; place-items: center; height: 44px; min-width: 44px; border-radius: 999px;
+    text-decoration: none; font-size: 1.15rem; border: 1.5px solid var(--line); background: #fff;
+  }
+  .bb-wa { border-color: #25d366; }
+  .bb-book { background: var(--gold); border-color: var(--gold); color: #fff; font-weight: 600; font-size: .98rem; padding: 0 22px; }
 }
