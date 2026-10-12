@@ -81,7 +81,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Phone-only booking shortcuts stay hidden even if a browser still has an old copy of style.css -->
+  <style>.book-bar, .nav-book { display: none; }</style>
+  <!-- EDIT: bump the ?v= number whenever style.css or script.js changes, so browsers load the new version -->
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -614,6 +617,6 @@
   <img alt="">
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
