@@ -296,6 +296,17 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .fest-list li, .tips-list li { margin-bottom: 10px; }
 .guide-cta-actions { justify-content: center; }
 .guide-link { margin-top: 26px; text-align: center; }
+.tour-card {
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; align-items: start;
+  background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--gold);
+  border-radius: var(--radius); padding: 32px 34px;
+}
+.tour-card h2 { margin-bottom: 14px; }
+.tour-list { padding-left: 20px; margin: 14px 0 0; }
+.tour-list li { margin-bottom: 10px; }
+.tour-facts .distances { margin-top: 0; }
+.tour-note { font-size: .9rem; color: var(--muted); margin: 14px 0 0; }
+@media (max-width: 900px) { .tour-card { grid-template-columns: 1fr; gap: 20px; padding: 24px 20px; } }
 
 /* ---------- Booking shortcuts ---------- */
 .review-cta { margin-top: 18px; font-weight: 600; color: var(--green); }
