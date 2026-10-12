@@ -71,6 +71,9 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .menu a:hover { color: var(--terra); }
 .menu .nav-cta { background: var(--green); color: #fff; padding: 8px 18px; border-radius: 999px; }
 .menu .nav-cta:hover { background: var(--green-2); color: #fff; }
+.menu a, .brand { white-space: nowrap; }
+.brand { margin-right: 18px; }
+@media (max-width: 1180px) { .menu { gap: 14px; } .menu a { font-size: .88rem; } .menu .nav-cta { padding: 7px 14px; } .brand-en { display: none; } }
 .menu-btn { display: none; background: none; border: 0; font-size: 1.6rem; cursor: pointer; color: var(--green); }
 
 /* ---------- Hero ---------- */
